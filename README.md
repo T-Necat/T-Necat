@@ -1,29 +1,30 @@
-## 👋 Merhaba, ben Toprak Necat Gök!
-🚀 **Savunma Sanayii'nde Aday Mühendis** olarak çalışıyorum ve **Görüntü İşleme & Yapay Zeka** alanlarında uzmanlaşıyorum.
+## 👋 Hello, I'm Toprak Necat Gök!  
+🚀 Currently working as a **Candidate Engineer in the Defense Industry**, specializing in **Computer Vision & Artificial Intelligence**.  
 
-### 🔬 **Uzmanlık Alanlarım**
-- 📌 **Görüntü İşleme:** YOLO, OpenCV, NumPy, Pandas
-- 📌 **Veri Tabanı Yönetimi:** PostgreSQL
-- 📌 **Doğal Dil İşleme (NLP):** Türkçe dil modelleri geliştirme ve eğitme
-- 📌 **Makine Öğrenmesi & Model Eğitimi:** Derin öğrenme ve model optimizasyonları
+### 🔬 **Areas of Expertise**  
+- 📌 **Computer Vision:** YOLO, OpenCV, NumPy, Pandas  
+- 📌 **Database Management:** PostgreSQL  
+- 📌 **Natural Language Processing (NLP):** Developing and training Turkish language models  
+- 📌 **Machine Learning & Model Training:** Deep learning and model optimization  
 
-### 🚀 **Projelerim**
-- 🏆 **Teknofest 2023-2024 Yapay Zeka Finalisti**
-- 🏆 **Bir Savunma Sanayi firmasında Aday Mühendislik Programı**
+### 🚀 **Projects**  
+- 🏆 **Teknofest 2023-2024 Artificial Intelligence Finalist**  
+- 🏆 **Candidate Engineer Program at a Defense Industry Firm**  
 
-### 📊 **GitHub İstatistikleri**
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)
+### 📊 **GitHub Stats**  
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++)  
 
-🔗 **Bağlantılarım**  
-📩 **Bana ulaşın:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
-[LinkedIn](https://linkedin.com/in/T-Necat) | [GitHub](https://github.com/T-Necat)
+🔗 **Connect with Me**  
+📩 **Reach out:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
+[LinkedIn](https://linkedin.com/in/T-Necat) | [GitHub](https://github.com/T-Necat)  
 
 ---
 
-### 🔥 **Kullandığım Teknolojiler**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-252525?style=for-the-badge&logo=yolo&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+### 🔥 **Technologies I Work With**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
+![YOLO](https://img.shields.io/badge/YOLO-252525?style=for-the-badge&logo=yolo&logoColor=white)  
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)  
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)  
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)  
