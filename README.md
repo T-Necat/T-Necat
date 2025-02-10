@@ -1,16 +1,30 @@
-## Hi there 👋
+## 👋 Merhaba, ben Toprak Necat Gök!
+🚀 **Savunma Sanayii'nde Aday Mühendis** olarak çalışıyorum ve **Görüntü İşleme & Yapay Zeka** alanlarında uzmanlaşıyorum.
 
-<!--
-**T-Necat/T-Necat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🔬 **Uzmanlık Alanlarım**
+- 📌 **Görüntü İşleme:** YOLO, OpenCV, NumPy, Pandas
+- 📌 **Veri Tabanı Yönetimi:** PostgreSQL
+- 📌 **Doğal Dil İşleme (NLP):** Türkçe dil modelleri geliştirme ve eğitme
+- 📌 **Makine Öğrenmesi & Model Eğitimi:** Derin öğrenme ve model optimizasyonları
 
-Here are some ideas to get you started:
+### 🚀 **Projelerim**
+- 📌 **[CopeAi](https://github.com/CopeAi)** - Kendi AI startup'ım
+- 🏆 **Teknofest 2023-2024 Yapay Zeka Finalisti**
+- 🏆 **TUSAŞ SkyExperience Aday Mühendislik Programı**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📊 **GitHub İstatistikleri**
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)
+
+🔗 **Bağlantılarım**  
+📩 **Bana ulaşın:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
+[LinkedIn](https://linkedin.com/in/T-Necat) | [GitHub](https://github.com/T-Necat)
+
+---
+
+### 🔥 **Kullandığım Teknolojiler**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-252525?style=for-the-badge&logo=yolo&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
