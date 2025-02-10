@@ -1,19 +1,22 @@
 ## 👋 Hello, I'm Toprak Necat Gök!  
 🚀 Currently working as a **Candidate Engineer in the Defense Industry**, specializing in **Computer Vision & Artificial Intelligence**.  
 
+
 ### 🔬 **Areas of Expertise**  
 - 📌 **Computer Vision:** YOLO, OpenCV, NumPy, Pandas  
 - 📌 **Database Management:** PostgreSQL  
 - 📌 **Natural Language Processing (NLP):** Developing and training Turkish language models  
 - 📌 **Machine Learning & Model Training:** Deep learning and model optimization  
 
+
 ### 🚀 **Projects**  
 - 🏆 **Teknofest 2023-2024 Artificial Intelligence Finalist**  
 - 🏆 **Candidate Engineer Program at a Defense Industry Firm**  
 
+
 ### 📊 **GitHub Stats** 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)   
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++)](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6) 
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)   
 
 
 🔗 **Connect with Me**  
