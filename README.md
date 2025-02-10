@@ -11,12 +11,24 @@
 - 🏆 **Teknofest 2023-2024 Artificial Intelligence Finalist**  
 - 🏆 **Candidate Engineer Program at a Defense Industry Firm**  
 
-### 📊 **GitHub Stats**
+### 📊 **GitHub Stats**  
 
-<div style="display: flex; align-items: center;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++" alt="Top Languages" width="45%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight" alt="GitHub Stats" width="50%" />
-</div>
+<table>
+  <tr>
+    <td>
+      <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight">
+        <img src="https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 🔗 **Connect with Me**  
 📩 **Reach out:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
