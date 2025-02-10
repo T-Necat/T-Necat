@@ -11,9 +11,10 @@
 - 🏆 **Teknofest 2023-2024 Artificial Intelligence Finalist**  
 - 🏆 **Candidate Engineer Program at a Defense Industry Firm**  
 
-### 📊 **GitHub Stats**  
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++)](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6) 
+### 📊 **GitHub Stats** 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)   
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++)](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6) 
+
 
 🔗 **Connect with Me**  
 📩 **Reach out:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
