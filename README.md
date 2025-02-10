@@ -8,9 +8,8 @@
 - 📌 **Makine Öğrenmesi & Model Eğitimi:** Derin öğrenme ve model optimizasyonları
 
 ### 🚀 **Projelerim**
-- 📌 **[CopeAi](https://github.com/CopeAi)** - Kendi AI startup'ım
 - 🏆 **Teknofest 2023-2024 Yapay Zeka Finalisti**
-- 🏆 **TUSAŞ SkyExperience Aday Mühendislik Programı**
+- 🏆 **Bir Savunma Sanayi firmasında Aday Mühendislik Programı**
 
 ### 📊 **GitHub İstatistikleri**
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)
