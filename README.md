@@ -12,23 +12,8 @@
 - 🏆 **Candidate Engineer Program at a Defense Industry Firm**  
 
 ### 📊 **GitHub Stats**  
-
-<table>
-  <tr>
-    <td>
-      <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight">
-        <img src="https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6&hide=javascript,html,css,c++)](https://github-readme-stats.vercel.app/api/top-langs/?username=T-Necat&layout=compact&theme=tokyonight&langs_count=6) 
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=T-Necat&show_icons=true&theme=tokyonight)   
 
 🔗 **Connect with Me**  
 📩 **Reach out:** [t.necatgok@gmail.com](mailto:t.necatgok@gmail.com)  
