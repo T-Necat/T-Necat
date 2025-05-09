@@ -1,138 +1,84 @@
-İşte şirket logosu eklenmiş final hali:
+# Code Analysis & Email Template Integration
+
+I've analyzed your C# code for a vehicle administration system with email notification functionality. The code currently handles:
+
+1. Vehicle status updates through methods like `UpdateVehicleAdmin`, `PassiveVehicleAdmin`, and `ActiveVehicleAdmin`
+2. Database operations for retrieving and updating vehicle records
+3. Email notifications when vehicle statuses change
+4. Error handling with try/catch blocks
+
+## Current Email Implementation
+
+Your existing email code:
+- Creates an SMTP client connecting to "outlook.tai.com.tr" on port 25
+- Uses credentials from "tacbts@tai.com.tr" with password "t#cBTS22" 
+- Builds HTML emails with basic styling
+- Includes a company logo if available at the specified path
+- Contains status notification messages in Turkish
+
+## Integration with New Email Template
+
+To integrate the template from the last image (TÜRKHAVACILIK UZAYSANAYII official template), you need to modify the HTML structure in your `htmlBody` variable. Here's how:
 
 ```csharp
-public async Task<AdminNodeMessage> ActiveVehicleAdmin(string id)
-{
-    try
-    {
-        var userID = _contextAccessor.HttpContext?.User.FindFirst("userName")?.Value;
-        //var role = _contextAccessor.HttpContext?.User.FindFirst("roleName")?.Value;
-        var vehicle = await _dbContext.Vehicles.Where(x => x.Id == Guid.Parse(id)).FirstOrDefaultAsync();
-        var user = await _dbContext.Users.Where(x => x.Userid == userID).FirstOrDefaultAsync();
-        
-        if (vehicle == null)
-        {
-            return new AdminNodeMessage
-            {
-                Message = "Araç bulunamadı.",
-                Result = false
-            };
-        }
-        
-        if(vehicle.Isactive)
-        {
-            return new AdminNodeMessage
-            {
-                Message = "Araç zaten aktif durumda.",
-                Result = false
-            };
-        }
-        
-        vehicle.Isactive = true;
-        vehicle.Updatedate = DateTime.Now;
-        vehicle.Modifiedid = userID;
-        
-        _dbContext.Vehicles.Update(vehicle);
-        await _dbContext.SaveChangesAsync();
-        
-        var toMail = await _dbContext.Roles.Where(x => x.Id == vehicle.Roleid).Select(y => y.Mail).FirstOrDefaultAsync();
-        
-        var fromAddress = new MailAddress("tacbts@tai.com.tr");
-        var toAddress = new MailAddress(toMail);
-        string fromPassword = "t#cBTS22";
-        string subject = "PTS Hakkında";
-        string plainTextBody = $"{user.Userid} ({user.Name + ' ' + user.Surname}), {vehicle.Plaka} plakasına sahip aracı pasif hale getirdi.";
-        
-        // HTML formatında içerik oluşturma (logo için)
-        string htmlBody = $@"
-        <html>
-        <head>
-            <style>
-                body {{ font-family: Arial, sans-serif; }}
-                .logo-container {{ margin-bottom: 20px; }}
-                .message {{ margin-top: 20px; }}
-                .footer {{ margin-top: 30px; color: #666; font-size: 12px; }}
-            </style>
-        </head>
-        <body>
-            <div class='logo-container'>
-                <img src='cid:companyLogo' alt='Şirket Logosu' width='150' />
-            </div>
-            <div class='message'>
-                <p>{user.Userid} ({user.Name + ' ' + user.Surname}), {vehicle.Plaka} plakasına sahip aracı pasif hale getirdi.</p>
-            </div>
-            <div class='footer'>
-                <p>Bu e-posta otomatik olarak gönderilmiştir. Lütfen yanıtlamayınız.</p>
-            </div>
-        </body>
-        </html>";
-        
-        var smtp = new SmtpClient("outlook.tai.com.tr", 25);
-        
-        smtp.UseDefaultCredentials = false;
-        smtp.EnableSsl = false;
-        
-        NetworkCredential credential = new NetworkCredential("tacbts", fromPassword);
-        smtp.Credentials = credential;
-        
-        using (var message = new MailMessage(fromAddress, toAddress))
-        {
-            message.Subject = subject;
-            message.Body = plainTextBody;
-            message.IsBodyHtml = true;
-            
-            // HTML içerik için AlternateView oluşturma
-            AlternateView htmlView = AlternateView.CreateAlternateViewFromString(htmlBody, null, "text/html");
-            
-            // Logo dosyasının yolunu belirtin - uygulama konumuna göre ayarlayın
-            string logoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "logo.png");
-            
-            // Logo dosyasının varlığını kontrol et
-            if (File.Exists(logoPath))
-            {
-                // Logo'yu LinkedResource olarak ekle
-                LinkedResource logo = new LinkedResource(logoPath);
-                logo.ContentId = "companyLogo"; // HTML içindeki cid referansı ile aynı olmalı
-                
-                // LinkedResource'u AlternateView'e ekleme
-                htmlView.LinkedResources.Add(logo);
-            }
-            
-            // HTML görünümünü mesaja ekleme
-            message.AlternateViews.Add(htmlView);
-            
-            // E-postayı gönderme
-            smtp.Send(message);
-        }
-        
-        return new AdminNodeMessage
-        {
-            Message = $"{vehicle.Plaka} plakalı araç başarılı şekilde aktif edildi.",
-            Result = true
-        };
-    }
-    catch (Exception ex)
-    {
-        return new AdminNodeMessage
-        {
-            Message = "Hata oluştu.",
-            Result = false
-        };
-    }
-}
+string htmlBody = $@"
+<html>
+<head>
+    <style>
+        body {{ font-family: Arial, sans-serif; }}
+        .logo-container {{ margin-bottom: 20px; }}
+        .message {{ margin-top: 20px; }}
+        .footer {{ margin-top: 30px; color: #666; font-size: 12px; }}
+        .classifier-label {{ background-color: green; color: white; padding: 5px; text-align: center; margin-top: 20px; }}
+    </style>
+</head>
+<body>
+    <div class='message'>
+        <p>{user.UserId} ({user.Name + ' ' + user.Surname}), {vehicle.Plaka} plakasına sahip aracı pasif hale getirdi.</p>
+    </div>
+    <div class='logo-container'>
+        <img src='cid:companyLogo' alt='TÜRKHAVACILIK UZAYSANAYII' width='150' />
+    </div>
+    <div class='footer'>
+        <p>*Bu mail sistem tarafından otomatik olarak gönderilmiştir. Lütfen bu maili cevaplamayınız.</p>
+        <p>*This mail has been sent automatically by system. Please don't reply to this mail.</p>
+        <p>Sınıflandırma Seviyesi : TASNIF DIŞI</p>
+        <p>Classification Level : UNCLASSIFIED</p>
+    </div>
+    <div class='classifier-label'>
+        TASNIF DIŞI
+    </div>
+</body>
+</html>";
 ```
 
-Bu kodda dikkat edilmesi gereken noktalar:
+## Key Changes to Make:
 
-1. `System.Net.Mail` ve `System.IO` namespace'lerini using direktiflerinde eklemelisiniz.
-2. Logo dosyasını projenize `Resources` klasörü altına yerleştirmeniz gerekir. Eğer farklı bir yolda tutuyorsanız, `logoPath` değişkenini güncelleyin.
-3. HTML içeriği, CSS stil tanımlarıyla daha profesyonel görünüm için zenginleştirilmiştir.
-4. `File.Exists` kontrolü sayesinde logo dosyası bulunamasa bile uygulama hata vermeden çalışmaya devam edecektir.
-5. E-postanın hem düz metin hem de HTML versiyonları oluşturulmuş, böylece alıcının e-posta istemcisi HTML desteklemese bile içeriği okuyabilecektir.
+1. **Update the company logo path**: Make sure the logo path points to the TÜRKHAVACILIK UZAYSANAYII logo
+   ```csharp
+   string LogoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "NewFolder", "turkhavasanayii-logo.png");
+   ```
 
-Logo dosyasını projenize eklemek için:
+2. **Add classification labels**: The official template includes classification information ("TASNIF DIŞI" / "UNCLASSIFIED")
 
-1. Solution Explorer'da projenize sağ tıklayın
-2. "Add > New Folder" seçerek "Resources" klasörünü oluşturun
-3. Bu klasöre sağ tıklayıp "Add > Existing Item" ile logo dosyanızı ekleyin
-4. Eklediğiniz dosyanın özelliklerinden "Copy to Output Directory" ayarını "Copy always" veya "Copy if newer" olarak ayarlayın​​​​​​​​​​​​​​​​
+3. **Email subject formatting**: Consider updating your email subjects to match the format shown in the last image:
+   ```csharp
+   string subject = $"{DateTime.Now:dd.MM.yyyy} {GetDayName()} - {vehicle.Plaka} Araç Durumu Bilgilendirme";
+   
+   // Helper method to get Turkish day name
+   private string GetDayName()
+   {
+       string[] days = { "Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi" };
+       return days[(int)DateTime.Now.DayOfWeek];
+   }
+   ```
+
+4. **Consider email recipients**: The template shows emails being sent to a group address (G1200m@tai.com.tr) with CC recipients. You might want to update your code to include appropriate recipients:
+   ```csharp
+   var toAddress = new MailAddress("G1200m@tai.com.tr");
+   // Add CC recipients if needed
+   message.CC.Add(new MailAddress("merve.donmez@tai.com.tr"));
+   message.CC.Add(new MailAddress("emineasli.turkmenoglu@tai.com.tr"));
+   ```
+
+The existing email sending mechanism in your code should work with these template changes. Just update the HTML content, ensure the correct logo file is available, and adjust recipients as needed to match your organization's requirements.​​​​​​​​​​​​​​​​
